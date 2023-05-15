@@ -42,7 +42,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "build")));
 
-const port = 5000;
+const port = 3000;
 app.listen(process.env.PORT || port, () => {
   console.log(`server running on port ${port}`);
 });
